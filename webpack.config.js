@@ -19,15 +19,12 @@ module.exports = {
         use: 'babel-loader'
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          }
-        ]
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ] /*1. Turn sass into css, turn css into commonJS, Inject styles into DOM */
       }
     ]
   },
