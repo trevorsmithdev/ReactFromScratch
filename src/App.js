@@ -1,8 +1,12 @@
 import React from 'react';
+import Test from './test.jsx';
 
 const App = () => {
-    const message = 'And thats how its done babyyyyy';
-return <h1>{message}</h1>
-}
+  return (
+    <div>
+      <Test />
+    </div>
+  );
+};
 
 export default App;
